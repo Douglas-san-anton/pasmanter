@@ -1,0 +1,264 @@
+@font-face {
+  font-family: 'trajan';
+  src: url('fonts/trajan-bold.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5F5F2;
+}
+
+.nav {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 80px;
+  background-color: #FFF;
+  color: black;
+  /* border-bottom: 1px solid black; */
+}
+
+.nav__container {
+  display: flex;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 100%;
+}
+
+.nav__label,
+.nav__input {
+  display: none;
+}
+
+.nav__menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2em;
+}
+
+.nav__item {
+  color: black;
+  font-size: .9rem;
+  padding: 1rem 0;
+  letter-spacing: 1px;
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav__item:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav__item::after {
+  content: "";
+  display: block;
+  background-color: #000000;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path .3s;
+}
+
+.company {
+  background-color: #B3AD9E;
+  border-radius: 0 0 0 5rem;
+  height: 512px;
+}
+
+.company__text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.company__text_right {
+  width: 70%;
+  font-size: 1.3rem;
+}
+
+.company__text_right>h2 {
+  margin-bottom: 2rem;
+  letter-spacing: .1rem;
+}
+
+.exportation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.exportation__container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.exportation__img {
+  background-color: black;
+  margin-right: 2rem;
+  width: 700px;
+  border-radius: 50%;
+}
+
+.exportation__text>h4 {
+  margin-bottom: 2rem;
+}
+
+.exportation__text>h2 {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.exportation__text>p {
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+
+.export__respect {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.export__respect_title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.export__respect_title>p {
+  margin: 3rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 50px;
+  color: white;
+  width: 28%;
+  height: 300px;
+}
+
+.card>h2 {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.card>p {
+  word-spacing: 0.2rem;
+}
+
+.card.animals {
+  background-color: #0E1A79;
+}
+
+.card.ecosystem {
+  background-color: #848EBB;
+}
+
+.card.people {
+  background-color: #171839;
+}
+
+.contact {
+  width: 100%;
+  background-color: white;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 3rem 0 5rem 0;
+  width: 80%;
+  background-color: #fff;
+}
+
+.contact__img>iframe {
+  border-radius: 20px;
+}
+
+.info {
+  margin: 2rem 0;
+}
+
+.footer {
+  width: 100%;
+  background-color: white;
+  border-top: 3px solid #F5F5F2;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav__menu {
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    width: 50%;
+    right: 0;
+    background-color: rgb(38, 70, 138);
+    clip-path: circle(0 at right);
+    transition: clip-path .8s ease-in-out;
+  }
+
+  .nav__input:checked~.nav__menu {
+    clip-path: circle(100% at center);
+  }
+
+  .nav__menu a {
+    color: white;
+    padding: 1rem;
+    text-align: start;
+    width: 100%;
+    transition: background-color .3s;
+  }
+
+}
+
+@media (max-width: 475px) {
+  .nav__menu {
+    width: 70%;
+  }
+}
