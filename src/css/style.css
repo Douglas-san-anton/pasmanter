@@ -68,6 +68,16 @@ body {
   transition: clip-path .3s;
 }
 
+.nav__item_img {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item_img>img:hover {
+  box-shadow: inset 0 0 2px 5px #00C46D;
+  border-radius: 50%;
+}
+
 .company {
   background-color: #95ceeb;
   border-radius: 0 0 0 5rem;
@@ -185,12 +195,33 @@ body {
   background-color: #fff;
 }
 
+.contact__img>h2 {
+  margin-bottom: 2rem;
+}
+
 .contact__img>iframe {
- border-radius: 20px;
+  border-radius: 20px;
 }
 
 .info {
+  display: flex;
+  align-items: center;
   margin: 2rem 0;
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone {
+  width: 30px;
+  margin-right: 1rem;
+}
+
+.mail {
+  width: 30px;
+  margin-right: 1rem;
 }
 
 .footer {
