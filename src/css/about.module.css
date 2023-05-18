@@ -5,7 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap');
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,7 +44,6 @@ body {
   grid-auto-flow: column;
   gap: 2em;
 }
-
 .nav__item {
   color: black;
   font-size: .9rem;
@@ -73,12 +72,19 @@ body {
   display: flex;
   align-items: center;
 }
+
 .nav__item_img>img:hover {
   box-shadow: inset 0 0 2px 5px #00C46D;
   border-radius: 50%;
 }
 
-.main {
+.company {
+  background-color: #95ceeb;
+  border-radius: 0 0 0 5rem;
+  height: 512px;
+}
+
+.company__text {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -87,168 +93,98 @@ body {
   margin: 0 auto;
 }
 
-.perfumery {
+.company__text_right {
+  width: 70%;
+  font-size: 1.3rem;
+}
+
+.company__text_right>h2 {
+  margin-bottom: 2rem;
+  letter-spacing: .1rem;
+}
+
+.exportation {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
   padding: 8rem 0;
 }
 
-.perfumery__img {
+.exportation__container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.exportation__img {
   background-color: black;
   margin-right: 2rem;
   width: 700px;
   border-radius: 50%;
 }
 
-.perfumery__text {
-  text-align: start;
-  padding-left: 5rem;
-}
-
-.perfumery__text>p {
-  margin-bottom: 1rem;
-}
-.perfumery__text>h2 {
+.exportation__text>h4 {
   margin-bottom: 2rem;
-  font-size: 3rem;
 }
-.perfumery__text>a {
-  background: #000;
+
+.exportation__text>h2 {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.exportation__text>p {
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+.exportation__text>a {
   text-decoration: none;
-  color: #fff;
-  padding: 1rem;
-  font-size: .8rem;
-}
-
-.company {
-  display: flex;
-  padding-bottom: 4rem;
-}
-
-.company__text {
-  padding-right: 2rem;
-  max-width: 650px;
-}
-.company__text>p {
-  margin-bottom: 1rem;
-}
-
-.company__text .info {
-  word-spacing: .3rem;
-  padding-bottom: 1rem;
-}
-
-.company__text>h2 {
-  margin-bottom: 2rem;
-  font-size: 3rem;
-}
-
-.company__text>a {
-  background: #000;
-  text-decoration: none;
-  color: #fff;
-  padding: 1rem 2rem;
-  font-size: .8rem;
-}
-
-.manufacturing {
-  width: 100%;
-  height: 500px;
-  background: #0C1B7A;
+  background-color: #000;
   color: white;
+  padding: 1rem 3rem;
 }
 
-.manufacturing__container {
+.export__respect {
   display: flex;
-  /* justify-content: flex-end; */
-  align-items: center;
-  height: 100%;
+  flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
-}
-
-.manufacturing__container>div {
-  min-width: 400px;
-}
-
-.manufacturing__container>div>p {
-  margin-bottom: 1rem;
-}
-
-.manufacturing__container>div>h2 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-.manufacturing__container .info {
-  padding-bottom: 2rem;
-}
-
-.manufacturing__container>div>a {
-  text-decoration: none;
-  color: #fff;
-  padding: 1rem 3rem;
-  font-size: .8rem;
-  border: 1px solid white;
-}
-
-.manufacturing__img {
-  width: 300px;
-  background-color: #000;
-  height: 100%;
-  margin-right: 5rem;
-}
-
-.manufacturing__list>li {
-  list-style: none;
-  border-bottom: 1px solid #ffffffbf;
-  margin: 3rem 0;
-  padding-bottom: 1rem;
-  width: 15rem;
-}
-
-.carousel {
-  background-color: #0C1B7A;
-}
-.carousel>p {
-  text-align: center;
-  padding: 1rem;
-  color: #FFF;
-  font-size: 1.3rem;
-}
-
-
-.slider {
-  width: 80%;
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-}
-
-.slider .slide-track {
+  margin-bottom: 5rem;
   display: flex;
-  animation: scroll 30s linear infinite;
-  -webkit-animation: scroll 30s linear infinite;
-  width: calc(200px * 24);
+  justify-content: space-between;
 }
 
-.slider .slide {
-  width: 200px;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  width: 28%;
+  height: 300px;
 }
 
-.slider .slide img {
-  width: 100%;
+.card>h2 {
+  margin-bottom: 2rem;
+  font-size: 1rem;
 }
 
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
+.card>p {
+    word-spacing: 0.2rem;
+}
 
-  100% {
-    -webkit-transform: translateX(calc(-200px * 12));
-    transform: translateX(calc(-200px * 12));
-  }
+.card.animals {
+  background-color: #0E1A79;
+}
+.card.ecosystem {
+  background-color: #848EBB;
+}
+
+.card.people {
+  background-color: #171839;
 }
 
 .contact {
@@ -310,6 +246,7 @@ body {
   background-color: white;
 }
 
+
 .footer__container>div {
   display: flex;
 }
@@ -325,6 +262,7 @@ body {
 .footer__container>div>a img {
   margin-right: 1rem;
 }
+
 
 @media (max-width: 768px) {
   .nav__label {
