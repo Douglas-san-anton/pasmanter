@@ -159,7 +159,7 @@ body {
 
 .manufacturing__container {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
   height: 100%;
   width: 80%;
@@ -191,12 +191,65 @@ body {
   border: 1px solid white;
 }
 
+.manufacturing__img {
+  width: 300px;
+  background-color: #000;
+  height: 100%;
+  margin-right: 5rem;
+}
+
+.manufacturing__list>li {
+  list-style: none;
+  border-bottom: 1px solid #ffffffbf;
+  margin: 3rem 0;
+  padding-bottom: 1rem;
+  width: 15rem;
+}
+
+.carousel {
+  background-color: #0C1B7A;
+}
+.carousel>p {
+  text-align: center;
+  padding: 1rem;
+  color: #FFF;
+  font-size: 1.3rem;
+}
 
 
+.slider {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
 
+.slider .slide-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 30s linear infinite;
+  width: calc(200px * 24);
+}
 
+.slider .slide {
+  width: 200px;
+}
 
+.slider .slide img {
+  width: 100%;
+}
 
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-200px * 12));
+    transform: translateX(calc(-200px * 12));
+  }
+}
 
 .contact {
   width: 100%;
@@ -255,6 +308,22 @@ body {
   margin: 0 auto;
   padding: 20px 0px;
   background-color: white;
+}
+
+.footer__container>div {
+  display: flex;
+}
+
+.footer__container>div>a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer__container>div>a img {
+  margin-right: 1rem;
 }
 
 @media (max-width: 768px) {
