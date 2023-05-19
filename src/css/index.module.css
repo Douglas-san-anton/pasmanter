@@ -362,7 +362,7 @@ body {
 
 }
 
-@media (max-width: 475px) {
+@media (max-width: 476px) {
   .nav__menu {
     width: 70%;
   }
@@ -417,6 +417,10 @@ body {
     height: 200px;
     width: 200px;
     margin-top: 2rem;
+  }
+
+  .slider{
+    width: 100%;
   }
 
   .contact__container {
