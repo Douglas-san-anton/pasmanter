@@ -21,7 +21,9 @@ body {
   height: 80px;
   background-color: #FFF;
   color: black;
-  /* border-bottom: 1px solid black; */
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .nav__container {
