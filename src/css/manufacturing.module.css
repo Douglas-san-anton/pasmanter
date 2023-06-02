@@ -318,8 +318,16 @@ body {
     width: 70%;
   }
 
+  .company{
+    background-position-x: -80px;
+    background-image: url('../img/tarro.png');
+    filter: opacity(90%);
+  }
+
   .company__text{
     justify-content: flex-start;
+    color: #ffffff;
+    text-shadow: 0px 0px 6px black;
   }
 
   .company__text_right {
