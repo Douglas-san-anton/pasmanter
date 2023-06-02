@@ -82,7 +82,12 @@ body {
 }
 
 .company {
-  background-color: #B3AD9E;
+  background-image: url('../img/tarro.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-color: #B9B6A7;
   border-radius: 0 0 0 5rem;
   height: 512px;
 }
@@ -97,7 +102,7 @@ body {
 }
 
 .company__text_right {
-  width: 70%;
+  width: 65%;
   font-size: 1.3rem;
 }
 

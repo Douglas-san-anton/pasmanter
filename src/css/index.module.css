@@ -89,21 +89,30 @@ body {
   margin: 0 auto;
 }
 
-.perfumery {
-  display: flex;
-  padding: 8rem 0;
+.mian__container {
+  width: 100%;
 }
 
-.perfumery__img {
-  background-color: black;
-  margin-right: 2rem;
-  width: 700px;
-  border-radius: 50%;
+.perfumery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.perfumery__img>.img__hero {
+  width: 60%;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  border-radius: 0% 0% 49% 32%;
 }
 
 .perfumery__text {
   text-align: start;
   padding-left: 5rem;
+  width: 400px;
+  padding-top: 5rem;
 }
 
 .perfumery__text>p {
@@ -123,7 +132,9 @@ body {
 
 .company {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 4rem;
+  margin-top: 13rem;
 }
 
 .company__text {
@@ -154,23 +165,22 @@ body {
 
 .manufacturing {
   width: 100%;
-  height: 500px;
   background: #0C1B7A;
   color: white;
 }
 
 .manufacturing__container {
   display: flex;
-  /* justify-content: flex-end; */
+  justify-content: space-between;
   align-items: center;
   height: 100%;
   width: 80%;
   margin: 0 auto;
 }
 
-.manufacturing__container>div {
+/* .manufacturing__container>div {
   min-width: 400px;
-}
+} */
 
 .manufacturing__container>div>p {
   margin-bottom: 1rem;
@@ -193,11 +203,8 @@ body {
   border: 1px solid white;
 }
 
-.manufacturing__img {
-  width: 300px;
-  background-color: #000;
-  height: 100%;
-  margin-right: 5rem;
+.manufacturing__img>img {
+  height: 400px;
 }
 
 .manufacturing__list>li {
@@ -209,7 +216,7 @@ body {
 }
 
 .carousel {
-  background-color: #0C1B7A;
+  background-color: #181738;
 }
 .carousel>p {
   text-align: center;
