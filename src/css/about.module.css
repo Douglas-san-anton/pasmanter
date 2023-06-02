@@ -310,16 +310,20 @@ body {
   .exportation {
     width: 100%;
     flex-direction: column;
+    padding: 3rem 0 5rem 0;
   }
 
   .exportation__container {
     flex-direction: column;
   }
 
-  .exportation__img {
-    margin-right: 0rem;
-    margin-bottom: 2rem;
+  .exportation__img>img {
     width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .exportation__text>h2 {
+    font-size: 1.5rem;
   }
 
   .export__respect {
