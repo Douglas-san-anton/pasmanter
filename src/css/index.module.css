@@ -371,7 +371,7 @@ body {
 
 }
 
-@media (max-width: 476px) {
+@media (max-width: 476px) { /*=================================*/
   .nav__menu {
     width: 70%;
   }
@@ -382,17 +382,28 @@ body {
     flex-direction: column;
   }
 
-  .perfumery__img {
-    width: 200px;
-    margin-bottom: 2rem;
-  }
+ .perfumery__img>.img__hero {
+   width: 100%;
+   position: absolute;
+   top: 80px;
+   left: 0px;
+   border-radius: 0% 0% 49% 32%;
+ }
 
   .perfumery__text {
+    text-align: start;
     padding-left: 0px;
+    width: 100%;
+    padding-top: 16rem;
   }
 
   .perfumery__text>h2 {
     font-size: 2em;
+  }
+
+  .company {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
   }
 
   .company__text {
@@ -402,6 +413,11 @@ body {
   }
   .company__text>h2 {
     font-size: 2rem;
+  }
+
+  .perfumery__img>img {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
   .manufacturing {
@@ -422,10 +438,16 @@ body {
     margin-bottom: 2rem;
   }
 
-  .manufacturing__img {
-    height: 200px;
-    width: 200px;
-    margin-top: 2rem;
+  .manufacturing__img>img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .manufacturing__list{
+    width: 100%;
+  }
+  .manufacturing__list>li{
+    width: 100%;
   }
 
   .slider{
