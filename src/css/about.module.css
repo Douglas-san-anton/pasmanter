@@ -212,31 +212,35 @@ body {
   border-radius: 20px;
 }
 
-.form {
-  margin-bottom: 2rem;
-}
-
 .form> h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.form input {
+.form__container{
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container input {
   height: 40px;
   width: 300px;
   border-radius: 5px;
   padding: 1rem;
+  margin: .5rem 0;
   outline: none;
   border: none;
   background-color: #F5F5F2;
 }
 
-.form input:last-child{
+.form__container input:last-child{
   line-height: 0px;
   background-color: black;
   color: white;
+  cursor: pointer;
+  margin-bottom: 2rem;
 }
 
-.form textarea {
+.form__container textarea {
   height: 60px;
   width: 300px;
   border-radius: 5px;

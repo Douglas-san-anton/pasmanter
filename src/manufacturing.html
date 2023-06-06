@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pasmanter</title>
   <link rel="stylesheet" href="./css/manufacturing.module.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('gu8mf_ijskC-HjVdW')
+  </script>
 </head>
 
 <body>
@@ -72,18 +77,18 @@
         </div>
 
         <div class="form">
+
           <h2>Contáctenos</h2>
-          <form action="enviar_correo.php" method="POST">
+          <form id="form" class="form__container">
+            <input placeholder="Nombre y apellido" type="text" name="from_name" id="from_name">
 
-            <input placeholder="Nombre y apellido" type="text" id="nombre" name="nombre" required><br><br>
+            <input placeholder="Teléfono" type="text" name="phone" id="phone">
 
-            <input placeholder="Teléfono" type="tel" id="telefono" name="telefono" required><br><br>
+            <input placeholder="Email" type="text" name="email_id" id="email_id">
 
-            <input placeholder="Email" type="email" id="email" name="email" required><br><br>
+            <textarea placeholder="Mensaje" type="text" name="message" id="message"></textarea>
 
-            <textarea placeholder="Mensaje" id="mensaje" name="mensaje" required></textarea><br><br>
-
-            <input type="submit" value="Enviar">
+            <input type="submit" id="button" value="Enviar">
           </form>
         </div>
 
