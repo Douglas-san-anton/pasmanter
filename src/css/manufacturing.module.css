@@ -102,7 +102,7 @@ body {
 }
 
 .company__text_right {
-  width: 65%;
+  width: 55%;
   font-size: 1.3rem;
 }
 
@@ -293,14 +293,13 @@ body {
     top: 80px;
     bottom: 0;
     width: 50%;
-    right: 0;
+    right: -100%;
     background-color: rgb(38, 70, 138);
-    clip-path: circle(0 at right);
-    transition: clip-path .8s ease-in-out;
+    transition: right 0.8s ease-in-out;
   }
 
   .nav__input:checked~.nav__menu {
-    clip-path: circle(100% at center);
+    right: 0;
   }
 
   .nav__menu a {
