@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'trajan';
-  src: url('fonts/HFMonorita-Bold.ttf');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Serif+Tamil:wght@500&family=Roboto+Mono:wght@400;500&display=swap');
 
 *{
   margin: 0;
@@ -12,7 +7,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   background-color: #F5F5F2;
 }
 
@@ -101,13 +96,14 @@ body {
 }
 
 .company__text_right {
-  width: 55%;
+  width: 60%;
   font-size: 1.3rem;
 }
 
 .company__text_right>h2 {
   margin-bottom: 2rem;
   letter-spacing: .1rem;
+  line-height: 2rem;
 }
 
 .exportation {
@@ -140,8 +136,9 @@ body {
 }
 
 .exportation__text>p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 2rem 0;
+  line-height: 2rem;
 }
 .exportation__text>a {
   text-decoration: none;
@@ -176,7 +173,7 @@ body {
 }
 
 .card>p {
-    word-spacing: 0.2rem;
+    font-size: .9rem;
 }
 
 .card.animals {
