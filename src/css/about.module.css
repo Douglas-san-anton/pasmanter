@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -311,10 +312,10 @@ body {
     .nav__menu {
       z-index: 100;
       display: flex;
-      justify-content: space-evenly;
       flex-direction: column;
       align-items: center;
       position: fixed;
+      gap: .5em;
       top: 80px;
       bottom: 0;
       width: 50%;
@@ -342,8 +343,13 @@ body {
     width: 70%;
   }
 
+  .company {
+    background-position-x: right;
+  }
+
   .company__text_right {
     width: 100%;
+    font-size: 1.1rem;
   }
 
   .exportation {

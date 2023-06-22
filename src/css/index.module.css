@@ -4,11 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  /* font-family: 'Amiri', serif;
-  font-family: 'Noto Serif Tamil', serif; */
   font-family: 'Roboto Mono', monospace;
   background-color: #F5F5F2;
 }
@@ -176,10 +175,6 @@ body {
   margin: 0 auto;
 }
 
-/* .manufacturing__container>div {
-  min-width: 400px;
-} */
-
 .manufacturing__container>div>p {
   margin-bottom: 1rem;
 }
@@ -247,6 +242,10 @@ body {
 
 .slider .slide img {
   width: 100%;
+}
+
+.slide.maxi {
+  width: 100px;
 }
 
 @keyframes scroll {
@@ -383,10 +382,10 @@ body {
   .nav__menu {
     z-index: 100;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     position: fixed;
+    gap: .5em;
     top: 80px;
     bottom: 0;
     width: 50%;
