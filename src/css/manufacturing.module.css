@@ -280,6 +280,70 @@ body {
   transform: rotate(0deg);
 }
 
+.products {
+  width: 100%;
+  height: 600px;
+}
+
+.products__container {
+  display: flex;
+}
+
+.carousel {
+  width: 50%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #FFF;
+  transition: transform 0.5s ease;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  border: none;
+  background: #ffffff;
+  font-size: 3rem;
+  color: #bcbcbc;
+  cursor: pointer;
+}
+
+.carousel button:hover {
+  color: #555555;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+.procducts__description {
+  width: 50%;
+  background-color: #0E1A79;
+  padding: 4rem 4rem;
+  color: #FFF;
+}
+
+.procducts__description>h2 {
+  margin-bottom: 2rem;
+}
+
+.procducts__ul>li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
 .contact {
   width: 100%;
   background-color: white;
@@ -438,13 +502,11 @@ body {
   .company{
     background-position-x: -480px;
     background-image: url('../img/tarro.png');
-    /* filter: opacity(90%); */
   }
 
   .company__text{
     justify-content: flex-start;
     color: #000000;
-    /* text-shadow: 0px 0px 6px black; */
   }
 
   .company__text_right {
@@ -479,6 +541,33 @@ body {
     width: 370px;
   }
 
+  .products {
+    height: 400px;
+  }
+
+  .products__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 400px;
+  }
+
+  .procducts__description {
+    width: 100%;
+    padding: 4rem 3rem;
+  }
+
+  .procducts__description>h2 {
+    font-size: 1.3em;
+  }
+
+  .contact {
+    padding-top: 40rem;
+  }
+
   .contact__container {
     flex-direction: column;
   }
@@ -490,12 +579,15 @@ body {
   }
 
   .footer__container {
-    flex-direction: column-reverse;
     align-items: center;
   }
 
   .footer__container>div {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .footer__container>div>a {
+    margin-left: 0px;
   }
 
   .footer__container>div>a:first-child {

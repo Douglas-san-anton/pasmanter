@@ -392,12 +392,15 @@ body {
   }
 
   .footer__container {
-    flex-direction: column-reverse;
     align-items: center;
   }
 
   .footer__container>div {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .footer__container>div>a {
+    margin-left: 0px;
   }
 
   .footer__container>div>a:first-child {

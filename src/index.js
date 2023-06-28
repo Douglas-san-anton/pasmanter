@@ -18,3 +18,29 @@ document.getElementById('form')
         alert(JSON.stringify(err));
       });
   });
+
+const prevButton = document.querySelector('#prevBtn');
+const nextButton = document.querySelector('#nextBtn');
+const totalImages = 9;
+let currentImageIndex = 1;
+
+prevButton.addEventListener('click', () => {
+  currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages || totalImages;
+  showImage(currentImageIndex);
+});
+
+nextButton.addEventListener('click', () => {
+  currentImageIndex = (currentImageIndex + 1) % totalImages || 1;
+  showImage(currentImageIndex);
+});
+
+function showImage(index) {
+  for (let i = 1; i <= totalImages; i++) {
+    const image = document.querySelector(`#image${i}`);
+    if (i === index) {
+      image.style.display = 'block';
+    } else {
+      image.style.display = 'none';
+    }
+  }
+}
