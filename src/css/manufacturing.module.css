@@ -538,7 +538,7 @@ body {
   }
 
   .service__img>img{
-    width: 370px;
+    width: 320px;
   }
 
   .products {
@@ -561,7 +561,7 @@ body {
   }
 
   .procducts__description>h2 {
-    font-size: 1.3em;
+    font-size: 1.1rem;
   }
 
   .contact {
