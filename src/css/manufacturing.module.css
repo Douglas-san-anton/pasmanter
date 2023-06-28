@@ -595,3 +595,9 @@ body {
     margin-left: 0px;
   }
 }
+
+@media (max-width: 376px) {
+.contact {
+    padding-top: 45rem;
+  }
+}
