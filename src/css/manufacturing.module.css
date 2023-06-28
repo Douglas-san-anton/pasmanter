@@ -600,4 +600,11 @@ body {
 .contact {
     padding-top: 45rem;
   }
+  .footer__container>div>a:first-child {
+    margin-right: .3rem;
+  }
+
+  .footer__container>div>a img {
+    margin-right: 0.1rem;
+  }
 }

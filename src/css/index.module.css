@@ -525,3 +525,12 @@ body {
   }
 
 }
+
+@media (max-width: 376px) {
+  .footer__container>div>a:first-child {
+      margin-right: .3rem;
+    }
+  .footer__container>div>a img {
+    margin-right: 0.1rem;
+  }
+}
