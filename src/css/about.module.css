@@ -476,7 +476,7 @@ body {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 410px) {
   .info__text {
     font-size: .8rem;
   }

@@ -699,7 +699,7 @@ body {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 410px) {
   .contact {
     padding-top: 45rem;
   }
