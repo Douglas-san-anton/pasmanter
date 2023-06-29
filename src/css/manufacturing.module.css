@@ -79,7 +79,7 @@ body {
 
 .company {
   background-image: url('../img/tarro10.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-position-x: left;
