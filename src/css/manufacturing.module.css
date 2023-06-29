@@ -78,8 +78,7 @@ body {
 }
 
 .company {
-  background-image: url('../img/tarro10.png');
-  background-size: contain;
+  background-image: url('../img/tarro13.png');
   background-position: center;
   background-repeat: no-repeat;
   background-position-x: left;
@@ -595,7 +594,7 @@ body {
   }
 
   .company{
-    background-position-x: -480px;
+    background-position-x: -560px;
     background-image: url('../img/tarro.png');
   }
 
