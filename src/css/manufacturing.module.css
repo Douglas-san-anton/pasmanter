@@ -217,12 +217,12 @@ body {
   margin-bottom: 3rem;
 }
 
-.faq__ul li {
+/* .faq__ul li {
   list-style: none;
   margin: 0 0 8px;
-}
+} */
 
-.faq__ul .faq__question {
+/* .faq__ul .faq__question {
   border: 0;
   font-weight: 400;
   font-size: 26px;
@@ -231,16 +231,15 @@ body {
   position: relative;
   color: black;
   border-bottom: 1px solid black;
-}
+} */
 
 .faq__question {
   display: block;
-  text-align: left;
-  cursor: pointer;
 }
 
 .faq__question__title {
   color: #0E1A79;
+  margin: 2rem 0;
 }
 
 .faq__question svg {
@@ -258,26 +257,26 @@ body {
   display: block;
 }
 
-.faq__answer {
+/* .faq__answer {
   padding: 0rem 0rem;
   text-align: start;
   max-height: 0;
   overflow: hidden;
   transition: all 0.2s ease;
-}
+} */
 
-.faq__questions input[type="checkbox"] {
+/* .faq__questions input[type="checkbox"] {
   display: none;
-}
+} */
 
-.faq__questions input[type="checkbox"]:checked~.faq__answer {
+/* .faq__questions input[type="checkbox"]:checked~.faq__answer {
   max-height: 600px;
   padding: 1rem 0;
 }
 
 .faq__questions input[type="checkbox"]:checked~.faq__question svg {
   transform: rotate(0deg);
-}
+} */
 
 .products {
   width: 100%;
@@ -286,6 +285,10 @@ body {
 
 .products__container {
   display: flex;
+}
+
+.products__mobile{
+  display: none;
 }
 
 .carousel {
@@ -659,7 +662,7 @@ body {
   }
 
   .contact {
-    padding-top: 40rem;
+    padding-top: 45rem;
   }
 
   .contact__container {
@@ -677,16 +680,12 @@ body {
   }
 
   .footer__container>div {
-    margin-bottom: 0rem;
+    flex-direction: column;
+    margin-right: 0rem;
   }
 
   .footer__container>div>a {
-    margin-left: 0px;
-  }
-
-  .footer__container>div>a:first-child {
-    margin-right: 1rem;
-    margin-left: 0px;
+    margin: .5rem 0;
   }
 
   .logo_desktop {

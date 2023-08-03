@@ -455,16 +455,12 @@ body {
   }
 
   .footer__container>div {
-    margin-bottom: 0rem;
+    flex-direction: column;
+    margin-right: 0rem;
   }
 
   .footer__container>div>a {
-    margin-left: 0px;
-  }
-
-  .footer__container>div>a:first-child {
-    margin-right: 1rem;
-    margin-left: 0px;
+    margin: .5rem 0;
   }
 
   .logo_desktop{

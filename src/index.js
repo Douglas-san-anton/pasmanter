@@ -44,3 +44,13 @@ function showImage(index) {
     }
   }
 }
+
+// Capturamos el elemento h2 y la lista de productos
+const toggleBtn = document.getElementById('toggleList');
+const productList = document.getElementById('productsList');
+
+// Agregamos un event listener para el clic en el h2
+toggleBtn.addEventListener('click', () => {
+  // Toggle para agregar o quitar la clase "show" del contenedor de la lista
+  productList.classList.toggle('show');
+});
