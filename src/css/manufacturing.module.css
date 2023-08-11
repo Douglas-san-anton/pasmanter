@@ -217,22 +217,6 @@ body {
   margin-bottom: 3rem;
 }
 
-/* .faq__ul li {
-  list-style: none;
-  margin: 0 0 8px;
-} */
-
-/* .faq__ul .faq__question {
-  border: 0;
-  font-weight: 400;
-  font-size: 26px;
-  margin-bottom: 1px;
-  padding: 0.8em 0em 0.8em 0em;
-  position: relative;
-  color: black;
-  border-bottom: 1px solid black;
-} */
-
 .faq__question {
   display: block;
 }
@@ -256,27 +240,6 @@ body {
 .faq__questions {
   display: block;
 }
-
-/* .faq__answer {
-  padding: 0rem 0rem;
-  text-align: start;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.2s ease;
-} */
-
-/* .faq__questions input[type="checkbox"] {
-  display: none;
-} */
-
-/* .faq__questions input[type="checkbox"]:checked~.faq__answer {
-  max-height: 600px;
-  padding: 1rem 0;
-}
-
-.faq__questions input[type="checkbox"]:checked~.faq__question svg {
-  transform: rotate(0deg);
-} */
 
 .products {
   width: 100%;
