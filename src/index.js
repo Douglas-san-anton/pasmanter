@@ -21,7 +21,7 @@ document.getElementById('form')
 
 const prevButton = document.querySelector('#prevBtn');
 const nextButton = document.querySelector('#nextBtn');
-const totalImages = 20;
+const totalImages = 22;
 let currentImageIndex = 1;
 
 prevButton.addEventListener('click', () => {
