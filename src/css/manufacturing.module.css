@@ -598,6 +598,7 @@ body {
 
   .company{
     background-position-x: -560px;
+    /* background-position-x: -135px; */
     background-image: url('../img/tarro.png');
   }
 
