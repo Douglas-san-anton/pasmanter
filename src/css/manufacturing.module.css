@@ -560,14 +560,18 @@ body {
   }
 
   .company{
-    background-position-x: -560px;
-    /* background-position-x: -135px; */
-    background-image: url('../img/tarro.png');
+    /* background-position-x: -560px; */
+    background-position-x: -135px;
+    background-image: url('../img/tarro13.png');
+    border-radius: 0 0 5rem 5rem;
+    margin-top: -5rem;
   }
 
   .company__text{
     justify-content: flex-start;
     color: #000000;
+    position: relative;
+    top: 28rem;
   }
 
   .company__text_right {
@@ -577,6 +581,7 @@ body {
 
   .export__respect {
     flex-direction: column;
+    margin-top: 25rem;
   }
 
   .export__respect_title>p {
