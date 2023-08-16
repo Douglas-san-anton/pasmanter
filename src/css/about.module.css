@@ -108,7 +108,7 @@ h2 {
 .company__text_right>h2 {
   margin-bottom: 2rem;
   /* letter-spacing: .1rem; */
-  line-height: 2rem;
+  /* line-height: 2rem; */
 }
 
 .exportation {
