@@ -381,7 +381,7 @@ h2 {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .nav__label {
     display: block;
     cursor: pointer;
@@ -473,6 +473,18 @@ h2 {
   .form__container textarea {
     height: 150px;
     width: auto;
+  }
+
+  .footer__container>div {
+    flex-direction: column;
+  }
+
+  .footer__container>div>a {
+    margin-left: 0px;
+  }
+
+  .footer__container>div>a:nth-child(2) {
+    margin: .5rem 0;
   }
 
 }

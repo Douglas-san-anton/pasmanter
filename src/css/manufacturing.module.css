@@ -432,7 +432,7 @@ h2 {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .nav__label {
     display: block;
     cursor: pointer;
@@ -479,6 +479,12 @@ h2 {
     display: flex;
     flex-direction: column;
     margin-top: 0rem;
+    background-position-x: -125px;
+  }
+
+  .export__respect {
+    flex-direction: column;
+    align-items: center;
   }
 
   .perfumery__img {
@@ -503,8 +509,12 @@ h2 {
   }
 
   .card {
-    width: 33%;
+    width: 70%;
     justify-content: stretch;
+  }
+
+  .card.ecosystem {
+    margin: 1rem 0;
   }
 
   .service__container {
@@ -552,6 +562,18 @@ h2 {
     width: auto;
   }
 
+  .footer__container>div {
+    flex-direction: column;
+  }
+
+  .footer__container>div>a {
+    margin-left: 0px;
+  }
+
+  .footer__container>div>a:nth-child(2) {
+    margin: .5rem 0;
+  }
+
   .logo_mobile {
     display: none;
   }
@@ -564,7 +586,6 @@ h2 {
   }
 
   .company{
-    /* background-position-x: -560px; */
     background-position-x: -135px;
     background-image: url('../img/tarro13.png');
     border-radius: 0 0 5rem 5rem;
